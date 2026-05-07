@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     ENTITY_SERVICE_TOKEN: str = "dev-token"
     JWT_PUBLIC_KEY: str = "dev-public-key-placeholder"
     APP_NAME: str = "workflow-service"
-    APP_ENV: str = "dev"
+    # APP_ENV: str = "dev"
 
     model_config = SettingsConfigDict(env_file=str(_SERVICE_ROOT / ".env"), extra="ignore")
 
